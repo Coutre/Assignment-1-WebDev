@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="BannerCont">
+            <img src="Images/Logo.jpg" alt="" id="Logo">
+            <nav>
+                <ul>
+                    <%- include('partials/uList.ejs') %>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <main>
+        <section>
+            <H1 class="HeaderText">CONTACT</H1>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="e-mail">e-mail:</label><br>
+                <input type="text" id="e-mail" name="e-mail"><br>
+
+                <label for="phone#">Phone Number:</label><br>
+                <input type="text" id="phone#" name="phone#"><br>
+
+                <label for="message">Message:</label><br>
+                <input type="text" id="message" name="message"  style="height: 100px;"><br>
+
+                <input type="submit" style="width: 100px;">
+            </form>
+        </section>
+    </main>
+
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
